@@ -4,42 +4,25 @@ author: Vasudevan Durairaj
 date: 08/June/2018
 autosize: true
 
+
+
 About the application
 ========================================================
-
+width: 940
+height: 529
 This Shiny Application was built to analyze the Locations of Earthquakes recorded off Fiji since year 1964. It includes 1000 seismic events of MB > 4.0 as available in quakes dataset. 
 
-- It has a simple user friendly interface with Side panel containing input filters like Stations, Depth and Magnitude of the seismic events recorded. 
+- Simple UI with Side panel input filters like Stations, Depth and Magnitude of the seismic events recorded and they are defaulted with its mean value. Additional option to plot all points available in the data set and also an option to Reset all filter inputs to its mean value is present.
 
-- On application launch, the filter inputs are defaulted with its mean value of recordings. The filter inputs would plot the seismic locations with all values less than or equal to slider value set. 
-
-- There are additional control on the input panel, wherein a option to plot all points available in the data set is given and also an option to Reset all filter inputs to its mean value is also provided.
-
-- The Interactive Map Visualization built using leaflet is plotted on the main panel based on the filtered inputs applied on the dataset with circle markers clustered in to group. The Radius of circle markers is plotted in proportion to the depth of seismic event location.
-
-- The Map is interactive which can be drilled through and up by zooming in/out and on click of circle markers, the popup is shown displaying the magnitude and depth of the seismic location. 
-
-- The Plotted count of locations is shown in the right bottom section underneath the map in order to clearly depict the analyzed seismic locations
+- The Interactive Map Visualization built using leaflet is plotted based on the filtered inputs applied on the dataset with circle markers clustered in to group. The Radius of circle markers is plotted in proportion to the depth of seismic event location.
 
 The dataset
 ========================================================
+width: 940
+height: 529
+
 The application is built based on the dataset "quakes"" which is available under datasets package in R. It is one of the Harvard PRIM-H project data sets which was in turn obtained from Dr. John Woodhouse, Dept. of Geophysics, Harvard University 
 
-
-```r
-## Sample records of data set
-head(quakes,6)
-```
-
-```
-     lat   long depth mag stations
-1 -20.42 181.62   562 4.8       41
-2 -20.62 181.03   650 4.2       15
-3 -26.00 184.10    42 5.4       43
-4 -17.97 181.66   626 4.1       19
-5 -20.42 181.96   649 4.0       11
-6 -19.68 184.31   195 4.0       12
-```
 
 ```r
 ## Structure of data set
@@ -57,8 +40,9 @@ str(quakes)
 
 User Interface - Interactive Map Visualization
 ========================================================
-
-This Application is hosted in shinyapps.io and a screenshot of it is available below. 
+width: 940
+height: 529
+Interactive map with zooming in/out functions and on click of circle markers, the popup is available with magnitude and depth of the seismic locations.
 
 ![alt text](quake.png)
 
@@ -69,7 +53,7 @@ Hosted Application Link
 <https://maddev.shinyapps.io/Earthquake_Visualization/>
 
 Source Code Repository Link 
-<> 
+<https://github.com/Maddev25/DDP_CourseProject.git> 
 
 Presentation document Link 
-<> 
+<http://rpubs.com/Maddev/fijiquakes> 
