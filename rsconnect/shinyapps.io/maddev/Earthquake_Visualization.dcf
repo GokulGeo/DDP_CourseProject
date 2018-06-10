@@ -1,0 +1,12 @@
+name: Earthquake_Visualization
+title: Earthquake_Visualization
+username:
+account: maddev
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 358253
+bundleId: 1420744
+url: https://maddev.shinyapps.io/Earthquake_Visualization/
+when: 1528591676.45767
+asMultiple: FALSE
+asStatic: FALSE
